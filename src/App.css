@@ -1,0 +1,360 @@
+/* loading and error */
+
+.status-box {
+  padding: 12px 20px;
+  margin: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.status-box.loading {
+  background-color: #1e1e1e;
+  color: #ffb74d;
+  border-left: 4px solid #ff9800;
+}
+
+.status-box.error {
+  background-color: #1e1e1e;
+  color: #ef5350;
+  border-left: 4px solid #f44336;
+}
+
+
+/* Sidebar full height and scroll if needed */
+.sidebar {
+  background-color: #121212;
+  min-height: 100vh;
+  /* Full viewport height */
+  overflow-y: auto;
+  
+}
+
+/* Nav link styling */
+.custom-link {
+  color: #f5f5f5;
+  padding-left: 10px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #ffb347 !important;
+  border-left-color: #ffb347;
+  background-color: rgba(255, 179, 71, 0.1);
+  font-weight: 500;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #1f1f1f;
+  min-height: 100vh;
+}
+
+/* Inner content box */
+.content-box {
+  background-color: #2a2a2a;
+  border-left: 6px solid #ffb347;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 767.98px) {
+  .sidebar {
+    min-height: auto;
+  }
+}
+
+/* Body dark background */
+body {
+  background-color: #121212;
+  /* dark mode background */
+  color: #e0e0e0;
+}
+
+/* Card Styling */
+.lead-card-dark {
+  background: #1e1e1e;
+  border-left: 5px solid #ff6f00;
+  /* bright orange */
+  border-radius: 10px;
+  color: #e0e0e0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lead-card-dark:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 111, 0, 0.3);
+}
+
+/* Title */
+.lead-card-dark .card-title {
+  color: #ffa726;
+  /* light orange */
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Status Badge */
+.status-badge {
+  /* background-color: #ff8f00; */
+  color: #121212;
+  font-size: 0.85rem;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+}
+
+.bg-new {
+  background-color: #ff9800;
+}
+
+.bg-contacted {
+  background-color:#64b5f6 ;
+}
+
+.bg-qualified {
+  background-color: #81c784 ;
+}
+
+.bg-proposal {
+  background-color:#ba68c8 ;
+}
+
+.bg-closed {
+  background-color: #ef5350;
+}
+
+/* Lead Detail List */
+.lead-details {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.lead-details li strong {
+  color: #ffb74d;
+}
+
+/* lead status */
+.lead-status-list {
+  list-style: none;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  color: #e0e0e0;
+}
+
+.lead-status-list li {
+  padding: 6px 12px;
+  background: #2a2a2a;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.lead-status-list li:hover {
+  background: #333;
+}
+
+/* Colored Status Labels */
+.status-label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.status-label.new {
+  color: #ff9800;
+}
+
+.status-label.contacted {
+  color: #64b5f6;
+}
+
+.status-label.qualified {
+  color: #81c784;
+}
+
+.status-label.proposal {
+  color: #ba68c8;
+}
+
+.status-label.closed {
+  color: #ef5350;
+}
+
+/* add lead btn */
+.btn-add-lead {
+  background-color: #ff6f00;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-add-lead:hover {
+  background-color: #e65100;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* lead list  */
+.sort-options-section {
+  /* background-color: #2a2a2a; */
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #ffb347;
+  color: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.sort-options-section input[type="checkbox"] {
+  accent-color: #ffb347; /* Modern checkbox color support */
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+/* add lead form */
+
+body {
+  background-color: #0d0d0d;
+  color: #fefefe;
+}
+
+.add-lead-card {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(255, 115, 0, 0.3);
+}
+
+.add-lead-card label {
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.add-lead-card .form-control,
+.add-lead-card .form-select {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.add-lead-card .form-control:focus,
+.add-lead-card .form-select:focus {
+  background-color: #111;
+  color: #fff;
+  border-color: #ff6600;
+  box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+}
+
+.add-lead-btn {
+  background-color: #ff6600;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease;
+  padding: 3px 5px;
+  border-radius: 5px;
+  
+}
+
+.add-lead-btn:hover {
+  background-color: #ffa64d;
+  color: #000;
+}
+
+/* lead details page */
+.lead-card {
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff8000; /* Bright orange glow */
+}
+
+.lead-card .label {
+  color: #ff9900;
+  font-weight: 600;
+}
+/* Overlay background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.8);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.update-popup {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.4);
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.popup-header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.popup-form-body {
+  overflow-y: auto;
+  padding-right: 8px;
+  flex: 1;
+}
+
+.popup-form-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popup-form-body::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 10px;
+}
+
+.btn-close-white {
+  filter: brightness(200%);
+}
+
+.delete-popup {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+}
+
+/* comment section */
+.comment {
+  background: #1a1a1a;
+  box-shadow: 0 0 6px #ff8000;
+  color: #fff;
+}
+
+.label {
+  color: #ff9900;
+  font-weight: 600;
+}
