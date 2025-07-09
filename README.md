@@ -34,7 +34,7 @@ npm run dev
 ## Demo Video
 Watch a walkthrough of the major features of this app:
 
-[Video](https://drive.google.com/file/d/1h8RZlCpDHFGqM4YxGymfCvfDS2JlRYTW/view?usp=drive_link)
+[Video](https://www.loom.com/share/c079fedbc6a0482a8f5bf9debad8678f?sid=0dd97d8a-ff91-488a-b233-4bb98035bd03)
 
 ---
 
